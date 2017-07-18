@@ -66,5 +66,9 @@
   },
   "scripts": {
     "test": "tape test/*.js"
+  },
+  "dependencies": {
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1"
   }
 }
