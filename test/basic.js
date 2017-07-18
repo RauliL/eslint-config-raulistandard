@@ -1,14 +1,13 @@
-var config = require('../')
-var test = require('tape')
+var config = require("../");
+var test = require("tape");
 
-test('test basic properties of config', function (t) {
-  t.ok(isObject(config.parserOptions))
-  t.ok(isObject(config.env))
-  t.ok(isObject(config.globals))
-  t.ok(isObject(config.rules))
-  t.end()
+test("test basic properties of config", function (t) {
+  t.ok(typeof config.extends === "string");
+  t.ok(config.extends === "semistandard");
+  t.ok(isObject(config.rules));
+  t.end();
 })
 
 function isObject (obj) {
-  return typeof obj === 'object' && obj !== null
+  return typeof obj === 'object' && obj !== null;
 }
