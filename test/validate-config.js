@@ -9,7 +9,7 @@ test("load config in eslint to validate all rule syntax is correct", function (t
     configFile: "eslintrc.json",
   })
 
-  var code = "var foo = 1;\nvar bar = function () {};\nbar(foo);\n";
+  var code = "var foo = [\n  1,\n  2,\n];\nvar bar = function () {};\nbar(foo);\n";
 
   t.equal(cli.executeOnText(code).errorCount, 0);
   t.end();
