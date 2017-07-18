@@ -8,7 +8,7 @@
       "imports": "always",
       "exports": "always",
       "functions": "never"
-    },
+    }],
     "quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }]
   }
 }
